@@ -10,14 +10,15 @@ import { Test } from './src/features/Test'
 
 
 export default function App() {
-  const [currentSubject, setCurrentSubject] = useState('')
-  const [history, setHistory] = useState([1, 2, 3])
+  const [currentSubject, setCurrentSubject] = useState()
+  const [history, setHistory] = useState([])
 
   return (
     !currentSubject ? (
     <SafeAreaView style={styles.container}>
       <Focus addSubject={setCurrentSubject}/>
       <FocusHistory history={history}/>
+      {/* <Test /> */}
     </SafeAreaView>
 
     ) : (
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     flex: 0.3,
-    justifyContent: 'top',
+    justifyContent: 'flex-start',
     padding: 25
   }
 });

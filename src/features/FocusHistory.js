@@ -6,9 +6,9 @@ export const FocusHistory = ({ history }) => {
     <View style={styles.container}>
       <Text style={styles.text}>Successfuly focused items:</Text>
       {
-        history.map((item) => {
+        history.map((item, i) => {
           return (
-            <Text>{item}</Text>
+            <Text key={i}>{item}</Text>
           )
         })
       }

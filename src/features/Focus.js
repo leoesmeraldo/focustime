@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     padding: 25,
-    justifyContent: 'top',
+    justifyContent: 'flex-start',
     flexDirection: 'row',
   },
   button: {

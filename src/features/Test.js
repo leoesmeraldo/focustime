@@ -5,20 +5,10 @@ import { colors } from '../utils/colors';
 import { RoundedButton } from '../components/Button';
 import { spacing } from '../utils/sizes';
 
-export const Test = ({ addSubject }) => {
-  const [subject, setSubject] = useState(null);
+export const Test = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.inputContainer}>
-        <TextInput
-          style={styles.textInput}
-          onChangeText={setSubject}
-          label="What would you like to focus on?"
-        />
-        <View style={styles.button}>
-          <RoundedButton title="+" size={50} onPress={() => addSubject(subject)} />
-        </View>
-      </View>
+      <Text>Teste</Text>
     </View>
   );
 };
@@ -35,7 +25,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     padding: spacing.lg,
-    justifyContent: 'top',
+    justifyContent: 'flex-start',
     flexDirection: 'row',
   },
 });
